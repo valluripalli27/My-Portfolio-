@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Valluripalli Lakshmi Prasanna - UI/UX Designer & Front-End Developer Portfolio">
+    <title>Valluripalli Lakshmi Prasanna | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark {
+            background-color: #121212;
+            color: #d1b1b1;
+        }
+        header {
+            background: #333;
+            color: rgb(225, 204, 204);
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px;
+            margin: 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: background-color 0.3s;
+        }
+        body.dark section {
+            background-color: rgba(18, 18, 18, 0.9);
+        }
+        h2 {
+            font-weight: bold;
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .skill-category {
+            margin: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .skill-list {
+            display: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+        .project {
+            display: inline-block;
+            margin: 20px;
+            position: relative;
+        }
+        .project img {
+            width: 300px;
+            height: 200px;
+            border-radius: 8px;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 100%;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .social a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em; /* Increased size for social icons */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        body.dark .btn {
+            background: #bb86fc;
+        }
+        #theme-toggle {
+            cursor: pointer;
+            margin: 10px;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Hello, I'm Valluripalli Lakshmi Prasanna</h1>
+            <p>UI/UX Designer & Front-End Developer with a passion for creating intuitive and engaging user experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Innovative UI/UX Designer with a solid foundation in front-end development, including expertise in HTML5, CSS3, and React. Leveraging over 4 years of experience in building dynamic and responsive web applications, I specialize in creating user-centric interfaces that ensure seamless experiences across devices. With a comprehensive understanding of user-centered design principles and a Master’s in Information Technologies specializing in Data Analytics, I excel in blending creativity with analytical insights to enhance user interactions. Proficient in integrating RESTful APIs and optimizing front-end performance, I am committed to driving design excellence and delivering impactful projects. Adept at using design tools such as Adobe Creative Suite, Figma, Adobe XD, and Sketch, I collaborate effectively with teams to bring cohesive designs to life..</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-category">📝 Languages</div>
+            <div class="skill-list">
+                <div class="skill">🐍 R</div>
+                <div class="skill">🔢 OOP</div>
+                <div class="skill">☕ Java</div>
+                <div class="skill">🟡 JavaScript</div>
+                <div class="skill">🔵 TypeScript</div>
+                <div class="skill">🐘 PHP</div>
+            </div>
+            <div class="skill-category">💻 Web Development</div>
+            <div class="skill-list">
+                <div class="skill">📄 HTML5</div>
+                <div class="skill">🎨 CSS3</div>
+                <div class="skill">⚛️ React</div>
+                <div class="skill">📦 JDBC</div>
+                <div class="skill">📊 SQL</div>
+            </div>
+            <div class="skill-category">📊 Data Tools</div>
+            <div class="skill-list">
+                <div class="skill">🎨 Adobe Creative Suite</div>
+                <div class="skill">📐 Figma</div>
+                <div class="skill">🖌️ Adobe XD</div>
+                <div class="skill">📝 Sketch</div>
+                <div class="skill">📊 Tableau</div>
+                <div class="skill">📈 Power BI</div>
+            </div>
+            <div class="skill-category">⚙️ DevOps & Others</div>
+            <div class="skill-list">
+                <div class="skill">🖥️ Windows Server</div>
+                <div class="skill">🐧 Linux</div>
+                <div class="skill">🌐 Git</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>WEBSOC.AI, Hyderabad, India</h3>
+        <p>Designer & Front-End Developer (Sep. 2018 - Oct. 2021)</p>
+        <ul>
+            <li>Designed user interfaces for web and mobile applications.</li>
+            <li>Developed wireframes, prototypes, and user journey maps.</li>
+            <li>Collaborated with developers to translate design prototypes into responsive web pages.</li>
+        </ul>
+        <h3>ECS Technologies</h3>
+        <p>Intern</p>
+        <p>Developed a LAMP Web Server on Raspberry Pi.</p>
+        <h3>ATOM Software Solutions</h3>
+        <p>Intern</p>
+        <p>Utilized Java for application development and worked with relational databases.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <a href="https://github.com/valluripalli27/clothing-system" target="_blank">
+                <img src="/Users/saitarunmattaparthi/Desktop/Portfolio/images:clothing-system.jpg" alt="Clothing System">
+                <div class="overlay">Clothing System</div>
+              </a>
+        </div>    
+    <div class="project">
+            <a href="https://github.com/valluripalli27/electric-monitoring-system" target="_blank">
+                <img src="/Users/saitarunmattaparthi/Desktop/Portfolio/Electro monitoring.jpg" alt="Electric Monitoring System">
+                <div class="overlay">Electric Monitoring System</div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/valluripalli27/Food-management-system" target="_blank">
+                <img src="/Users/saitarunmattaparthi/Desktop/Portfolio/food-management.jpg" alt="Food Management System">
+                <div class="overlay">Food Management System</div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/valluripalli27/Data-Analysis-" target="_blank">
+                <img src="/Users/saitarunmattaparthi/Desktop/Portfolio/Sentiment Classifier.jpg" alt="Sentiment Classifier">
+                <div class="overlay">Sentiment Classifier</div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/valluripalli27/carbon-emission-calculator" target="_blank">
+                <img src="/Users/saitarunmattaparthi/Desktop/Portfolio/Carbon Emission Calculator.jpg" alt="Carbon Emission Calculator">
+                <div class="overlay">Carbon Emission Calculator</div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="https://github.com/valluripalli27/Linux-" target="_blank">
+                <img src="/Users/saitarunmattaparthi/Desktop/Portfolio/Lamp Shield. jpg.webp" alt="Lamp Shield">
+                <div class="overlay">Lamp Shield</div>
+            </a>
+        </div>
+    </section>
+    
+    
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:e80fb8aa-7800-429d-8247-439f71345b2f" class="btn" target="_blank">here</a>.</p>
+    </section>
+    
+    <section>
+        <h2>Contact Me</h2>
+        <p>Please contact me directly at <a href="mailto:lakshmiprasannavlu@gmail.com">lakshmiprasannavlu@gmail.com</a> or through this form.</p>
+        <form action="#" method="post">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <h3>Connect with me on social media:</h3>
+        <div class="social">
+            <a href="https://github.com/valluripalli27" target="_blank"><i class="fab fa-github" style="font-size: 1em;"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/valluripalli-lakshmi-prasanna" target="_blank"><i class="fab fa-linkedin" style="font-size: 1em;"></i> LinkedIn</a>
+        <p>© 2024 Valluripalli Lakshmi Prasanna. All rights reserved.</p>
+    </footer>
+    
+    
+    
+  
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+        });
+
+        document.querySelectorAll('.skill-category').forEach(item => {
+            item.addEventListener('click', () => {
+                const list = item.nextElementSibling;
+                list.style.display = list.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
